@@ -42,8 +42,28 @@ function App() {
 
  return( 
     <>
+    <div className="container mx-auto bg-green-800 p-5">
+        <nav className="flex justify-between">
+            <div>
+                <h5 className="text-lg text-gray-100 dark:text-white">Todos using TS/React and Tailwind CSS</h5>
+            </div>
+        </nav>
+    </div>
+    <div className="h-64 grid grid-cols-3 gap-4">
+     <div>&nbsp;</div>
+     <div>&nbsp;</div>
+     <div>&nbsp;</div>
+     <div>&nbsp;</div>
+     <div>
         <TodoList todos={todos} toggleTodo={toggleTodo} />
+     </div>
+     <div>&nbsp;</div>
+     <div>&nbsp;</div>
+     <div>
         <AddTodoForm addTodo={addTodo} />
+     </div>
+     <div>&nbsp;</div>
+    </div>
     </>
     );
 

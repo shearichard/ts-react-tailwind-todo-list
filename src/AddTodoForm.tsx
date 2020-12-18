@@ -20,14 +20,17 @@ export const AddTodoForm: React.FC<Props> = ({ addTodo }) => {
 
   return (
     <form>
+    <div>
       <input 
         type="text" 
+        className="justify-self-center border border-gray-300 text-blue-dark font-semibold py-2 px-4 m-5 " 
         value={text}
         onChange={e => {
             setText(e.target.value);
         }}
       />
       <button 
+        className="bg-transparent hover:bg-blue text-blue-dark font-semibold hover:text-white py-2 px-4 m-1 border border-blue hover:border-transparent rounded"
         type="submit"
         onClick={e => {
           e.preventDefault();
@@ -37,6 +40,7 @@ export const AddTodoForm: React.FC<Props> = ({ addTodo }) => {
       >
         Add Todo
       </button>
+    </div>
     </form>
   );
 };
